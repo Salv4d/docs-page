@@ -11,6 +11,22 @@ ul {
   width: 100%;
 }
 
+pre {
+  width: 50%;
+  padding: 0 15px;
+  background-color: #fff2bb;
+  border: 1px solid #ffe159;
+}
+
+footer {
+  margin-left: 320px;
+}
+
+.inline-code {
+  font-style: italic;
+  background-color: #fff2bb;
+}
+
 #navbar {
   display: flex;
   position: fixed;
@@ -47,4 +63,32 @@ ul {
 #main-doc {
   margin-left: 320px;
   text-align: left;
+}
+
+@media (max-width: 800px) {
+  body {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  #navbar {
+    position: relative;
+    width: 95%;
+    margin: auto;
+  }
+
+  #main-doc {
+    position: relative;
+    width: 95%;
+    margin: 10px 0;
+  }
+
+  pre {
+    width: 90%;
+    word-wrap: break-word;
+  }
 }
